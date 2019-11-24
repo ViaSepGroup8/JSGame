@@ -19,10 +19,11 @@ function bubleUp() {
 
 //Main loop start
 var a = 1;
-while(a === 1) {
+while(a == 1) {
   //bubleUp();
-  console.log("Test")
   move("GoldFish");
+  delay(500);
   move("BlueFish");
+  delay(500);
 }
 //Main loop end
