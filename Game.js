@@ -5,8 +5,8 @@ function move(id,x,y) {
 }
 function move(id) {
   let x, y;
-  x = "+="+ ((Math.random() * 200) - 100);
-  y = "+="+ ((Math.random() * 200) - 100);
+  x = ((Math.random() * 200) - 100);
+  y = ((Math.random() * 200) - 100);
   let str = "#" + id;
   $(str).animate({left: x, top: y});
 }
@@ -19,8 +19,8 @@ function bubleUp() {
 //Buble behaviour end
 
 //Main loop start
-$("#BlueFish").animate({left: 500, top: 250});
-$("#GoldFish").animate({left: 500, top: 250});
+$("#BlueFish").animate({left: 500, top: -250});
+$("#GoldFish").animate({left: 500, top: -250});
 for(let i = 0; i < 7; i++){
   //bubleUp();
   move("GoldFish");
