@@ -19,8 +19,8 @@ function bubleUp() {
 //Buble behaviour end
 
 //Main loop start
-$("#BlueFish").animate({left: 500, top: -250});
-$("#GoldFish").animate({left: 500, top: -250});
+move("GoldFish",200,-300);
+move("BlueFish",200,-300);
 for(let i = 0; i < 7; i++){
   //bubleUp();
   move("GoldFish");
