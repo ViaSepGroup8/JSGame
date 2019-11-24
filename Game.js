@@ -1,28 +1,28 @@
 //Fish behaviour start
 function move(id,x,y) {
   var str = "#" + id;
-  $(str).animate({left: += x, top += y});
+  $(str).animate({left: x, top: y});
 }
 function move(id) {
   var x = ((Math.random() * 200) - 100);
   var y = ((Math.random() * 200) - 100);
   var str = "#" + id;
-  $(str).animate({left: += x, top += y});
+  $(str).animate({left: x, top: y});
 }
 //Fish behaviour end
 
 //Buble behaviour start
 function bubleUp() {
-  $(".Buble").animate({top: += "+=50"});
+  $(".Buble").animate({top: "+=50"});
 }
 //Buble behaviour end
 
 //Main loop start
-while(true) {
-  bubleUp();
-  alert("1");
+var a = 1;
+while(a === 1) {
+  //bubleUp();
+  console.log("Test")
   move("GoldFish");
-  window.alert("2");
   move("BlueFish");
 }
 //Main loop end
