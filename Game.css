@@ -1,4 +1,5 @@
 #GoldFish, #BlueFish {
   width: 10%;
   height: auto;
+  position: relative;
 }

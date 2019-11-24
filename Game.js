@@ -20,7 +20,9 @@ function bubleUp() {
 //Main loop start
 while(true) {
   bubleUp();
+  alert("1");
   move("GoldFish");
+  window.alert("2");
   move("BlueFish");
 }
 //Main loop end
