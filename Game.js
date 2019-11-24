@@ -1,12 +1,13 @@
 //Fish behaviour start
 function move(id,x,y) {
-  var str = "#" + id;
+  let str = "#" + id;
   $(str).animate({left: x, top: y});
 }
 function move(id) {
-  var x = ((Math.random() * 200) - 100);
-  var y = ((Math.random() * 200) - 100);
-  var str = "#" + id;
+  let x, y;
+  x = "+="+ ((Math.random() * 200) - 100);
+  y = "+="+ ((Math.random() * 200) - 100);
+  let str = "#" + id;
   $(str).animate({left: x, top: y});
 }
 //Fish behaviour end
@@ -18,12 +19,11 @@ function bubleUp() {
 //Buble behaviour end
 
 //Main loop start
-var a = 1;
-while(a == 1) {
+$("#BlueFish").animate({left: 500, top: 250});
+$("#GoldFish").animate({left: 500, top: 250});
+for(let i = 0; i < 7; i++){
   //bubleUp();
   move("GoldFish");
-  delay(500);
   move("BlueFish");
-  delay(500);
 }
 //Main loop end
