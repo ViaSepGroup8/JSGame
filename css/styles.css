@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+img{
+    position: fixed;
+}
+
+#aquarium {
+    height: 100vh;
+    background-color: black;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+
+    /* DEBUG
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-style: dotted;
+    color: red;
+    */
+}
+
+#fish1Id {
+    position: fixed;
+    left: 250px;
+    top: 250px;
+    height: 30%;
+}
+
+#fish2Id {
+    left: 500px;
+    top: 250px;
+    height: 20%;
+}
+
+.bubbleClass {
+    top: -100px;
+    height: 10%;
+}
+
+.mirror {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+ }
